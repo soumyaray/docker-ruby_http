@@ -1,4 +1,4 @@
-FROM iron/ruby:2.3.1
+FROM ruby:2.4.1-alpine
 
 RUN \
     # update alpine packages
@@ -14,7 +14,7 @@ RUN \
     rm -rf /var/cache/apk/*
 
 # build image with:
-#   docker build --rm --force-rm -t soumyaray/ruby-http:2.3.1 .
+#   docker build --rm --force-rm -t soumyaray/ruby-http:2.4.1 .
 
 # (OPTIONAL) push image to docker hub with:
-#   docker push soumyaray/ruby-http:2.3.1
+#   docker push soumyaray/ruby-http:2.4.1
