@@ -1,4 +1,4 @@
-FROM ruby:2.5.3-alpine
+FROM ruby:2.7.2-alpine
 
 RUN \
     # update alpine packages
@@ -11,7 +11,7 @@ RUN \
     && rm -rf /var/cache/apk/*
 
 # build image with:
-#   docker build --rm --force-rm -t soumyaray/ruby-http:2.5.3 .
+#   docker build --rm --force-rm -t soumyaray/ruby-http:2.7.2 .
 
 # (OPTIONAL) push image to docker hub with:
-#   docker push soumyaray/ruby-http:2.5.3
+#   docker push soumyaray/ruby-http:2.7.2
