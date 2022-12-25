@@ -1,4 +1,4 @@
-FROM ruby:3.0.3-alpine
+FROM ruby:3.1.3-alpine
 
 RUN \
     # update alpine packages
@@ -11,10 +11,10 @@ RUN \
     && rm -rf /var/cache/apk/*
 
 # Build image with:
-#   docker build --rm --force-rm -t soumyaray/ruby-http:3.0.3 .
+#   docker build --rm --force-rm -t soumyaray/ruby-http:3.1.3 .
 #
 # Run container with this image:
-#   docker run --rm -it soumyaray/ruby-http:3.0.3 sh
+#   docker run --rm -it soumyaray/ruby-http:3.1.3 sh
 #
 # (OPTIONAL) push image to docker hub with:
-#   docker push soumyaray/ruby-http:3.0.3
+#   docker push soumyaray/ruby-http:3.1.3
